@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: oraviro-ai-agent
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh -c 'python -m app.channels.telegram & exec uvicorn app.main:app --host 0.0.0.0 --port $PORT'
+    healthCheckPath: /health
+    disk:
+      name: oraviro-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: ORAVIRO_DB_PATH
+        value: /var/data/oraviro.db
+      - key: LLM_PROVIDER
+        value: groq
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ORAVIRO_ADMIN_API_KEY
+        sync: false

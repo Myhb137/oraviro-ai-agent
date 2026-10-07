@@ -1,0 +1,62 @@
+{
+  "company": {
+    "name": "Ora Viro",
+    "tagline": "Build. Automate. Scale.",
+    "summary": "Ora Viro designs and builds digital systems, automation workflows, AI solutions, and scalable digital products for businesses ready to scale.",
+    "website": "https://oraviro-app.vercel.app/",
+    "pricing_note": "Prices below are published on the official website in DZD. The accessible site labels pricing as implementation pricing but does not clearly establish recurring billing or tax treatment. Do not describe these prices as monthly or tax-inclusive. Confirm final scope and terms with the Ora Viro team."
+  },
+  "packages": [
+    {"id":"pkg-starter","name":"Starter","price_dzd":33250,"fit":"Solo practitioners, new ventures, and targeted campaign launches.","summary":"A landing page or business site with direct WhatsApp lead conversion."},
+    {"id":"pkg-business","name":"Business","price_dzd":119700,"fit":"Clinics, salons, consultancies, and local service providers.","summary":"A complete business platform with online booking or basic CRM intake."},
+    {"id":"pkg-growth","name":"Growth","price_dzd":239400,"fit":"Growing companies scaling sales teams and reducing manual follow-up.","summary":"Connects a website or client hub with CRM, lead qualification, and automated workflows."},
+    {"id":"pkg-commerce","name":"Commerce","price_dzd":332500,"fit":"DTC retail brands, apparel manufacturers, and scaling e-commerce stores.","summary":"E-commerce infrastructure with inventory sync, order flows, courier automation, and analytics."},
+    {"id":"pkg-automation","name":"Automation","price_dzd":399000,"fit":"Businesses replacing repetitive manual tasks with connected workflows.","summary":"Automated business pipelines for repeatable operational work."},
+    {"id":"pkg-ai-business","name":"AI Business","price_dzd":465500,"fit":"Businesses deploying AI for customer support and lead triage.","summary":"AI agents for customer support and automated lead triage."},
+    {"id":"pkg-business-os","name":"Business OS","price_dzd":798000,"fit":"Businesses needing one connected system across sales, inventory, orders, branches, and finance.","summary":"An end-to-end digital operating system connecting core business operations."},
+    {"id":"pkg-enterprise","name":"Enterprise","price_dzd":1330000,"fit":"Large or complex organizations needing bespoke enterprise architecture.","summary":"Custom enterprise architecture, ERP, dedicated cloud, and SLA support."}
+  ],
+  "services": [
+    {"id":"landing-page","name":"High-Conversion Landing Page","price_dzd":13300,"category":"Digital Presence"},
+    {"id":"business-website","name":"Business Website","price_dzd":79800,"category":"Digital Presence"},
+    {"id":"professional-corporate-website","name":"Professional Corporate Website","price_dzd":146300,"category":"Digital Presence"},
+    {"id":"premium-custom-website","name":"Premium Custom Website","price_dzd":239400,"category":"Digital Presence"},
+    {"id":"product-catalog","name":"Digital Product Catalog","price_dzd":106400,"category":"Digital Presence"},
+    {"id":"client-portal","name":"Dedicated Client Portal","price_dzd":266000,"category":"Digital Presence"},
+    {"id":"membership-website","name":"Membership & Community Platform","price_dzd":266000,"category":"Digital Presence"},
+    {"id":"custom-web-platform","name":"Custom Web Application","price_dzd":399000,"category":"Digital Presence"},
+    {"id":"saas-mvp","name":"SaaS MVP Development","price_dzd":997500,"category":"Digital Presence"},
+    {"id":"crm-basic","name":"CRM Basic","price_dzd":199500,"category":"Business Systems"},
+    {"id":"crm-pro","name":"CRM Pro","price_dzd":399000,"category":"Business Systems"},
+    {"id":"order-management","name":"Order Management System","price_dzd":199500,"category":"Business Systems"},
+    {"id":"inventory-management","name":"Inventory Management System","price_dzd":239400,"category":"Business Systems"},
+    {"id":"employee-management","name":"Employee Management System","price_dzd":199500,"category":"Business Systems"},
+    {"id":"branch-management","name":"Multi-Branch Management System","price_dzd":266000,"category":"Business Systems"},
+    {"id":"business-management-system","name":"Complete Business Management System","price_dzd":598500,"category":"Business Systems"},
+    {"id":"erp-lite","name":"ERP Lite Platform","price_dzd":798000,"category":"Business Systems"},
+    {"id":"custom-erp","name":"Custom Enterprise ERP","price_dzd":1330000,"category":"Business Systems"},
+    {"id":"restaurant-os","name":"ORA RESTAURANT OS","price_dzd":665000,"category":"Business Systems"},
+    {"id":"digital-menu","name":"Interactive QR Digital Menu","price_dzd":53200,"category":"Business Systems"},
+    {"id":"online-ordering","name":"Online Food Ordering System","price_dzd":199500,"category":"Business Systems"},
+    {"id":"ora-commerce-os","name":"ORA COMMERCE OS","price_dzd":332500,"category":"Business Systems"},
+    {"id":"lead-automation","name":"Lead Capture & Follow-up Automation","price_dzd":66500,"category":"Automation"},
+    {"id":"whatsapp-automation","name":"WhatsApp Workflow Automation","price_dzd":119700,"category":"Automation"},
+    {"id":"crm-automation","name":"CRM Pipeline Automation","price_dzd":199500,"category":"Automation"},
+    {"id":"ai-customer-support","name":"AI Customer Support Assistant","price_dzd":133000,"category":"AI","summary":"Multilingual conversational assistant grounded in business knowledge, with human escalation."},
+    {"id":"ai-lead-qualification","name":"AI Lead Qualification Agent","price_dzd":159600,"category":"AI","summary":"Qualifies leads based on budget and urgency, with lead scoring and structured CRM summaries."},
+    {"id":"ai-business-assistant","name":"AI Business Intelligence Assistant","price_dzd":332500,"category":"AI"},
+    {"id":"executive-dashboard","name":"Executive KPI Dashboard","price_dzd":332500,"category":"Analytics"},
+    {"id":"professional-booking","name":"Professional Booking System","price_dzd":199500,"category":"Business Systems"},
+    {"id":"loyalty-pro","name":"Customer Loyalty & Rewards System","price_dzd":199500,"category":"Business Systems"},
+    {"id":"customer-mobile-app","name":"Customer Mobile App (iOS & Android)","price_dzd":399000,"category":"Digital Products"},
+    {"id":"agencies","name":"Digital & Creative Agencies","price_dzd":33250,"category":"Industry Solutions"},
+    {"id":"addon-lang","name":"Additional Language Support","price_dzd":6650,"category":"Add-ons"}
+  ],
+  "recommendation_rules": {
+    "e_commerce": {"package_id":"pkg-commerce","service_ids":["ai-customer-support","whatsapp-automation","order-management","inventory-management","ora-commerce-os"]},
+    "lead_management": {"package_id":"pkg-growth","service_ids":["lead-automation","crm-automation","ai-lead-qualification"]},
+    "customer_support": {"package_id":"pkg-ai-business","service_ids":["ai-customer-support"]},
+    "repetitive_operations": {"package_id":"pkg-automation","service_ids":["whatsapp-automation","crm-automation"]},
+    "connected_operations": {"package_id":"pkg-business-os","service_ids":["business-management-system","inventory-management","order-management"]}
+  }
+}
